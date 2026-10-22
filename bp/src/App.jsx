@@ -1,32 +1,31 @@
-import PlayerCard from './components/PlayerCard'
+import './App.css'
+import StudentCard from './components/StudentCard'
+import ClassCard from './components/ClassCard'
 
 function App() {
   return (
     <main className="app-shell">
-      <PlayerCard name="Leo Santos" 
-      position="ST" 
-      rating={89} 
-      tier="gold" 
-      teamColor="#1e6b34"
-      stats={{ pac: 94, sho: 88, pas: 79, dri: 90, def: 35, phy: 76 }}
-      />
-
-      <PlayerCard name="Mia Johnson" 
-      position="CM" 
-      rating={85} 
-      tier="silver" 
-      teamColor="#1e3a6b"
-      stats={{ pac: 80, sho: 75, pas: 88, dri: 82, def: 70, phy: 78 }}
-      />
-      
-      <PlayerCard name="Ethan Brown" 
-      position="CB" 
-      rating={82} 
-      tier="bronze" 
-      teamColor="#6b1e1e"
-      stats={{ pac: 70, sho: 60, pas: 65, dri: 68, def: 85, phy: 80 }}
-      />
- 
+      <ClassCard title="Advanced Programming for IT" subtitle="Technology High School">
+        <div className="squad">
+          <StudentCard student={{ name: 'Juliano M. Ataides', id: '204517', grade: '10th', role: 'Team Lead' }} />
+          <StudentCard student={{ name: 'Hailey Ferreira', id: '318246', grade: '11th', role: 'Note Taker' }} />
+          <StudentCard student={{ name: 'Joshua Chimeremeze Fineboy-Mark', id: '471093', grade: '9th', role: 'Researcher' }} />
+          <StudentCard student={{ name: 'Steven R. Gonell', id: '602158', grade: '12th', role: 'Presenter' }} />
+          <StudentCard student={{ name: 'Darius Gabriel Macanela-Landi', id: '155820', grade: '10th', role: 'Designer' }} />
+          <StudentCard student={{ name: 'Yanzel Mejia', id: '628245', grade: '12th', role: 'Coder' }} />
+          <StudentCard student={{ name: 'Kaira Ximena Mora', id: '284673', grade: '9th', role: 'Team Lead' }} />
+          <StudentCard student={{ name: 'David T. Moreno-Viera', id: '910347', grade: '12th', role: 'Coder' }} />
+          <StudentCard student={{ name: 'Rodney Morris', id: '563218', grade: '10th', role: 'Timekeeper' }} />
+          <StudentCard student={{ name: 'Elhoussanie Nouri', id: '408792', grade: '11th', role: 'Researcher' }} />
+          <StudentCard student={{ name: 'Liz Abigail Osorto', id: '628245', grade: '9th', role: 'Note Taker' }} />
+          <StudentCard student={{ name: 'Kenneth Eliezer Paz Serrano', id: '820614', grade: '12th', role: 'Presenter' }} />
+          <StudentCard student={{ name: 'Yandel Quinapanta', id: '246931', grade: '9th', role: 'Editer' }} />
+          <StudentCard student={{ name: 'Rous Mery Rosario Tirado', id: '708152', grade: '10th', role: 'Team Lead' }} />
+          <StudentCard student={{ name: 'Camila Sanchez', id: '483716', grade: '11th', role: 'Presenter' }} />
+          <StudentCard student={{ name: 'Jean Chrys Santander', id: '591240', grade: '12th', role: 'Timekeeper' }} />
+          <StudentCard student={{ name: 'Anthony Miguel Siri', id: '164508', grade: '9th', role: 'Researcher' }} />
+        </div>
+      </ClassCard>
     </main>
   )
 }

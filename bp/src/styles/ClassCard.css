@@ -1,0 +1,16 @@
+h2{
+    align-items: left;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    color: white;
+}
+
+p{
+    align-items: left;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    color: white;
+}
+

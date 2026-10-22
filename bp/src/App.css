@@ -1,3 +1,7 @@
+body{
+  background: black;
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -181,4 +185,8 @@
     right: 0;
     border-right-color: var(--border);
   }
+}
+
+.squad{
+  display: flex; gap: 24px; flex-wrap: wrap;
 }
